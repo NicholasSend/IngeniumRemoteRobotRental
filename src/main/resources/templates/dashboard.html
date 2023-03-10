@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Survey Website</title>
+    <link href="/css/main.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <h1 th:text="|${username} - Dashboard|"></h1>
+</div>
+<div class="container">
+    <div th:each="sssn : ${sessions}">
+        <h3 th:text="${sssn.getId()}"></h3>
+        <div th:text="${sssn.getStartDate()}"></div>
+        <div th:text="${sssn.getEndDate()}"></div>
+        <a th:href="|/reciepts?id=${sssn.getId()}|">
+            <span>View Receipt</span>
+        </a>
+        <br>
+    </div>
+</div>
+</body>
+</html>
