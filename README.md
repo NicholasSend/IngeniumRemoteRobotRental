@@ -50,8 +50,6 @@ Maven - Dependency management
 
 H2 - The database used
 
-Bootstrap - The web development framework used
-
 jQuery - The JavaScript library used
 
 ## Authors
